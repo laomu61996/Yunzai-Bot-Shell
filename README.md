@@ -71,7 +71,7 @@ su
 ```
 
 ```
-bash <(curl -sL https://gitee.com/baihu433/Yunzai-Bot-Shell/raw/master/install.sh)
+bash <(curl -sL https://github.com/laomu61996/Yunzai-Bot-Shell/raw/master/install.sh)
 ```
 
 </details>
