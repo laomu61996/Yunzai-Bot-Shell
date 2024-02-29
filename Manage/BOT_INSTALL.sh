@@ -9,7 +9,7 @@ if [ -z "${GitMirror}" ];then
       GitMirror="github.com"
   fi
 fi
-URL="https://${GitMirror}/baihu433/Yunzai-Bot-Shell/raw/master/Linux/Bot-Install-"
+URL="https://${GitMirror}/laomu61996/Yunzai-Bot-Shell/raw/master/Linux/Bot-Install-"
 Arch_Script="${URL}ArchLinux.sh"
 Kernel_Script="${URL}CentOS.sh"
 Ubuntu_Script="${URL}Ubuntu.sh"
