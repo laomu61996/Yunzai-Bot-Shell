@@ -203,35 +203,6 @@ echo -en ${cyan}回车返回${background}
 read
 }
 
-FfmpegPath(){
-file="config/config/bot.yaml"
-if [ ! -e ${file} ];then
-    echo -e ${red}文件不存在${background}
-    return
-fi
-echo -en ${cyan}请输入ffmpeg路径: ${background}
-read NewFfmpegPath
-echo -en ${cyan}请输入ffprobe路径: ${background}
-read NewFfprobePath
-if ! $(echo ${NewFfmpegPath} | grep -q '/');then
-    echo -en ${cyan}回车返回${background}
-    read
-    return
-fi
-if ! $(echo ${NewFfprobePath} | grep -q .*.exe);then
-    echo -e ${red}请以.exe结尾${background}
-    echo -en ${cyan}回车返回${background}
-    read
-    return
-fi
-NewFfmpegPath="ffmpeg_path: ${NewFfmpegPath}"
-NewFfprobePath="ffprobe_path: ${NewFfprobePath}"
-OldFfmpegPath=$(grep "ffmpeg_path:" ${file})
-OldFfprobePath=$(grep "ffprobe_path:" ${file})
-sed -i "s/${OldFfmpegPath}/${NewFfmpegPath}/g" ${file}
-sed -i "s/${OldFfprobePath}/${NewFfprobePath}/g" ${file}
-echo -en ${green}修改完成 ${cyan}回车返回${background}
-}
 
 BrowserPath(){
 file="config/config/bot.yaml"
