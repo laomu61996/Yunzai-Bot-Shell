@@ -189,15 +189,15 @@ help
 exit
 ;;
 PI)
-bash <(curl -sL https://gitee.com/baihu433/Yunzai-Bot-Shell/raw/master/Manage/BOT-PlugIn.sh)
+bash <(curl -sL https://github.com/laomu61996/Yunzai-Bot-Shell/raw/master/Manage/BOT-PlugIn)
 exit
 ;;
 QS)
-bash <(curl -sL https://gitee.com/baihu433/Yunzai-Bot-Shell/raw/master/Manage/QSignServer.sh)
+bash <(curl -sL https://github.com/laomu61996/Yunzai-Bot-Shell/raw/master/Manage/QSignServer)
 exit
 ;;
 SWPKG)
-bash <(curl -sL https://gitee.com/baihu433/Yunzai-Bot-Shell/raw/master/Manage/BOT_INSTALL.sh)
+bash <(curl -sL https://github.com/laomu61996/Yunzai-Bot-Shell/raw/master/Manage/BOT_INSTALL.sh)
 exit
 ;;
 YZ|Yunzai|Yunzai-Bot)
